@@ -8,6 +8,10 @@ ul,ol li{
   list-style: none;
 }
 
+.menu > ul > li:last-child {
+  font-weight: bold;
+}
+
 a{
   text-decoration: none;
   color: #000;
@@ -20,15 +24,21 @@ a:hover{
 
 .menu{
   background-color: #ddd7d7;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .menu li{
   display: inline;
-  padding-left: 12px;
+  padding-left: 54px;
+  padding: 47px;
 }
 
 .menu img{
   width: 40px;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
 .estilo-imagem{
@@ -60,6 +70,42 @@ a:hover{
   margin-top:10px;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: row wrap;
+}
+
+.container-flex{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: row wrap;
+}
+
+.rodape{
+  justify-content: space-around;
+  display: flex;
+  padding: 50px;
+  
+}
+
+.sobre-bolovo{
+  margin: 50px
+}
+
 footer{
   background-color: #ddd7d7;
+}
+
+.rodape > .info > ol > li:first-child {
+  font-weight: bold;
+  margin-bottom: 5px; 
+}
+
+.rodape > .info > ol > li:nth-child {
+  font-weight: bold;
+  margin-bottom: 5px; 
 }
